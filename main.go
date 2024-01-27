@@ -139,7 +139,7 @@ func start(url string, word string, semaphore chan struct{}, status_codes []stri
 			clr = "\033[32m"
 		}
 
-		fmt.Printf("%s%d:%d\t%d/%d (%d%%)\t%d\t%s\n\033[0m", clr, res.StatusCode, res.ContentLength, checkedLines, totalLines, checkedPercentage, errors, address)
+		fmt.Printf("%s%d:%d\t%d/%d (%d%%)\t%d\t%s\n\033[0m", clr, res.StatusCode, res.ContentLength, checkedLines, totalLines, checkedPercentage, errors, word)
 	}
 
 }
